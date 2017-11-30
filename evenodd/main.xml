@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE embed_activity PUBLIC "-//Carnegie Mellon University//DTD Embed 1.1//EN" "http://oli.cmu.edu/dtd/oli-embed-activity_1.0.dtd">
+<embed_activity id="harnessed" width="500" height="300">
+  <title>Harness demo</title>
+  <source>Integers/webcontent/evenodd/activity.js</source>
+  <assets>
+    <asset name="layout">Integers/webcontent/evenodd/layout.html</asset>
+    <asset name="questions">Integers/webcontent/evenodd/questions.json</asset>
+  </assets>
+</embed_activity>

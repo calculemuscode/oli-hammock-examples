@@ -1,0 +1,47 @@
+[
+  {
+    "prompt": "Enter our names in the fields below",
+    "parts": [
+      {
+        "score": 2,
+        "match": {
+          "rob": [2, "Correct, you input Rob's name!"],
+          "chris": [1, "That's the spouse of the person that should be in the first blank, try again."],
+          "iliano": "Wrong order, try a different name in the first blank.",
+          "steven": "Wrong order, try a different name in the first blank."
+        },
+        "nomatch": "Incorrect, that's not one of our names",
+        "hints": [
+          "He's the balding one.",
+          "He's the one in Raleigh."
+       ]
+      },
+      {
+        "score": 2,
+        "match": {
+          "iliano": [2, "Correct, you input Iliano's name."],
+          "steven": "Wrong order, try a different name in the second blank.",
+          "rob": "Wrong order, try a different name in the second blank."
+        },
+        "nomatch": "Incorrect, that's not one of our names",
+        "hints": [
+          "He's the one with the H stapled to his shirt.",
+          "He's the most tired one."
+        ]
+      },
+      {
+        "score": 2,
+        "match": {
+          "steven": [2, "Correct, you input Steven's name in the third blank."],
+          "iliano": "Wrong order, try a different name in the third blank.",
+          "rob": "Wrong order, try a different name in the third blank."
+        },
+        "nomatch": "Incorrect, that's not one of our names",
+        "hints": [
+          "He's the one who knows what he's doing.",
+          "He's the one that is on top of the meeting reminder emails."
+        ]
+      }
+    ]
+  }
+]

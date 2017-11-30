@@ -1,0 +1,17 @@
+{
+  "name": "harnessed-example",
+  "version": "0.0.1",
+  "description": "Example usage of oli-embedded-harness package",
+  "main": "main.js",
+  "license": "ISC",
+  "scripts": {
+    "webpack": "webpack",
+    "watch": "webpack-dev-server --progress --colors"
+  },
+  "devDependencies": {
+    "@calculemus/oli-embedded-harness": "^0.0.2",
+    "path": "^0.12.7",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
