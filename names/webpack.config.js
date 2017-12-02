@@ -12,7 +12,7 @@ module.exports = {
     devServer: {
         contentBase: [
             path.join(__dirname),
-            path.join(__dirname, "node_modules/@calculemus/oli-embedded-harness/assets")
+            path.join(__dirname, "node_modules/@calculemus/oli-hammock/assets")
         ]
     }
 }

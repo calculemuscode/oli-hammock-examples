@@ -1,4 +1,4 @@
-const hammock = require("@calculemus/oli-embedded-harness");
+const hammock = require("@calculemus/oli-hammock");
 module.exports = hammock.simple({
     render: (data) => {
        $("#prompt").text(data.prompt);
