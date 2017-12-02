@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE embed_activity PUBLIC "-//Carnegie Mellon University//DTD Embed 1.1//EN" "http://oli.cmu.edu/dtd/oli-embed-activity_1.0.dtd">
-<embed_activity id="harnessed" width="500" height="300">
+<embed_activity id="evenodd" width="500" height="300">
   <title>Harness demo</title>
   <source>Integers/webcontent/evenodd/activity.js</source>
   <assets>
