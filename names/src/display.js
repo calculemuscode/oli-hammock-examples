@@ -1,13 +1,13 @@
-const widgets = require("./widgets");
+const widgets = require("@calculemus/oli-widgets");
 
 /**
- * The question's state is only dependent on the string values of the three text fields.
+ * The question's state contains the student's entry and the hint state for every part.
  */
 module.exports.read = () => {
     return [
-        $(document.body).find("#blank0").val(),
-        $(document.body).find("#blank1").val(),
-        $(document.body).find("#blank2").val(),
+        { val: $(document.body).find("#blank0").val(), hint: widgets.readHint($("#hint0")) },
+        { val: $(document.body).find("#blank1").val(), hint: widgets.readHint($("#hint1")) },
+        { val: $(document.body).find("#blank2").val(), hint: widgets.readHint($("#hint2")) }
     ];
 };
 
@@ -16,9 +16,14 @@ module.exports.read = () => {
  */
 module.exports.render = data => {
     $("#prompt").text(data.prompt);
-    $("#blank0").val(data.parts[0].response);
-    $("#blank1").val(data.parts[1].response);
-    $("#blank2").val(data.parts[2].response);
+
+    $("#blank0").val(data.parts[0].response && data.parts[0].response.val);
+    $("#blank1").val(data.parts[1].response && data.parts[1].response.val);
+    $("#blank2").val(data.parts[2].response && data.parts[2].response.val);
+
+    $("#hint0").html(widgets.hint(data.parts[0].hints, data.parts[0].response && data.parts[0].response.hint));
+    $("#hint1").html(widgets.hint(data.parts[1].hints, data.parts[1].response && data.parts[0].response.hint));
+    $("#hint2").html(widgets.hint(data.parts[2].hints, data.parts[2].response && data.parts[0].response.hint));
 
     let feedback = $("<div/>");
     let correct = true;
