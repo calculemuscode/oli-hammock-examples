@@ -22,8 +22,8 @@ module.exports.render = data => {
     $("#blank2").val(data.parts[2].response && data.parts[2].response.val);
 
     $("#hint0").html(widgets.hint(data.parts[0].hints, data.parts[0].response && data.parts[0].response.hint));
-    $("#hint1").html(widgets.hint(data.parts[1].hints, data.parts[1].response && data.parts[0].response.hint));
-    $("#hint2").html(widgets.hint(data.parts[2].hints, data.parts[2].response && data.parts[0].response.hint));
+    $("#hint1").html(widgets.hint(data.parts[1].hints, data.parts[1].response && data.parts[1].response.hint));
+    $("#hint2").html(widgets.hint(data.parts[2].hints, data.parts[2].response && data.parts[2].response.hint));
 
     let feedback = $("<div/>");
     let correct = true;
