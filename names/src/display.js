@@ -27,13 +27,13 @@ module.exports.init = () => ({
 module.exports.render = data => {
     $("#prompt").text(data.prompt);
 
-    $("#blank0").val(data.response.vals[0]);
-    $("#blank1").val(data.response.vals[1]);
-    $("#blank2").val(data.response.vals[2]);
+    $("#blank0").val(data.state.vals[0]);
+    $("#blank1").val(data.state.vals[1]);
+    $("#blank2").val(data.state.vals[2]);
 
-    $("#hint0").html(widgets.hint(data.parts[0].hints, data.response.hints[0]));
-    $("#hint1").html(widgets.hint(data.parts[1].hints, data.response.hints[1]));
-    $("#hint2").html(widgets.hint(data.parts[2].hints, data.response.hints[2]));
+    $("#hint0").html(widgets.hint(data.parts[0].hints, data.state.hints[0]));
+    $("#hint1").html(widgets.hint(data.parts[1].hints, data.state.hints[1]));
+    $("#hint2").html(widgets.hint(data.parts[2].hints, data.state.hints[2]));
 
     let feedback = $("<div/>");
     let correct = true;

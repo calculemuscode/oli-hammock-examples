@@ -1,15 +1,15 @@
 const hammock = require("@calculemus/oli-hammock");
 const widgets = require("@calculemus/oli-widgets");
 
-module.exports = hammock.simple({
-    read: () => ({
-        seed: parseInt($("#n").text()),
-        resp: $("#blank").val()
+module.exports = hammock.hammock({
+    init: () => ({
+        seed: Math.floor(Math.random() * 128) + 128,
+        resp: ""
     }),
 
     render: data => {
-        $("#n").text(data.response.seed);
-        $("#blank").val(data.response.resp);
+        $("#n").text(data.state.seed);
+        $("#blank").val(data.state.resp);
         if (data.parts[0].feedback) {
             $("#feedback").html(widgets.feedback(data.parts[0].feedback.message, data.parts[0].feedback.correct));
         } else {
@@ -17,9 +17,9 @@ module.exports = hammock.simple({
         }
     },
 
-    init: () => ({
-        seed: Math.floor(Math.random() * 128) + 128,
-        resp: ""
+    read: () => ({
+        seed: parseInt($("#n").text()),
+        resp: $("#blank").val()
     }),
 
     parse: data => {

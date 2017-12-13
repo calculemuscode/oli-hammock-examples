@@ -9,14 +9,14 @@ const parse = (str) => {
     return i % 2 === 0 ? "even" : "odd";
 };
 
-module.exports = hammock.simple({
+module.exports = hammock.hammock({
     init: () => ["", ""],
 
     render: (data) => {
        $("#prompt").text(data.prompt);
-       $("#blank0").val(data.response[0]);
+       $("#blank0").val(data.state[0]);
        $("#feedback0").text(data.parts[0].feedback ? data.parts[0].feedback.message : "");
-       $("#blank1").val(data.response[1]);
+       $("#blank1").val(data.state[1]);
        $("#feedback1").text(data.parts[1].feedback ? data.parts[1].feedback.message : "");
     },
 

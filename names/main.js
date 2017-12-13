@@ -1,6 +1,6 @@
-const harness = require("@calculemus/oli-hammock");
+const hammock = require("@calculemus/oli-hammock");
 
-module.exports = harness.simple({
+module.exports = hammock.hammock({
     render: require("./src/display").render,
     read: require("./src/display").read,
     init: require("./src/display").init,
