@@ -9,8 +9,8 @@
     "watch": "webpack-dev-server --progress --colors"
   },
   "devDependencies": {
-    "@calculemus/oli-hammock": "^0.0.5",
-    "@calculemus/oli-widgets": "^1.0.0",
+    "@calculemus/oli-hammock": "^0.1.0",
+    "@calculemus/oli-widgets": "^1.1.0",
     "path": "^0.12.7",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"

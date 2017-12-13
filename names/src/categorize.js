@@ -4,6 +4,7 @@
  * separate classification function to split up the answer space is a useful one.
  */
 module.exports = s => {
+    if (s === "") return null;
     switch(s.toLowerCase()) {
         case "dr. chris martens": return "chris";
         case "doc martens": return "chris";

@@ -14,7 +14,6 @@
       "match": {
         "even": "Incorrect, that's not an odd number.",
         "odd": [true, "Correct, that's an odd number."],
-
         "neg": "Incorrect. That's a negative number, and we asked for a nonnegative number.",
         "blank": "Please given an answer for this part."
       },
