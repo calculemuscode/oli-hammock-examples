@@ -1,0 +1,10 @@
+{
+    "part": {
+        "match": {
+            "correct": [true, "That's the right answer! You can press RESET to try again with a different answer."],
+            "notbinary": "Your result needs to be a binary number. You can try again, or press RESET to try a different number.",
+            "notword": "Your result should have exactly 8 binary digits. You can try again, or press RESET to try a different number.",
+            "wrong": "It looks like you made a calculation error. Try again or press RESET to try a different number."
+        }
+    }
+}

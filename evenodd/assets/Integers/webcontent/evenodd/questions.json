@@ -1,11 +1,11 @@
 {
-  "prompt": "Enter a nonnegative even number, then a nonnegative odd number.",
+  "prompt": "Enter a nonnegative even number, then a nonnegative odd number",
   "parts": [
     {
       "match": {
         "even": [true, "Correct, that's an even number."],
         "odd": "Incorrect, that's not an even number.",
-        "neg": "Incorrect. That's a negative number, and we asked for a nonnegative number.",
+        "neg": "Incorrect. That's negative; we asked for a nonnegative number.",
         "blank": "Please given an answer for this part."
       },
       "nomatch": "That's not an integer."
@@ -14,7 +14,8 @@
       "match": {
         "even": "Incorrect, that's not an odd number.",
         "odd": [true, "Correct, that's an odd number."],
-        "neg": "Incorrect. That's a negative number, and we asked for a nonnegative number.",
+
+        "neg": "Incorrect. That's negative; we asked for a nonnegative number.",
         "blank": "Please given an answer for this part."
       },
       "nomatch": "That's not an integer."
