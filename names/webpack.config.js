@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+    mode: "development",
     entry: {
         activity: path.join(__dirname, "main.js")
     },
