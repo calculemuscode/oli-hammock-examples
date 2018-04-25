@@ -12,8 +12,8 @@ module.exports = {
     },
     devServer: {
         contentBase: [
-            path.join(_dirname),
-            path.join(_dirname, "node_modules", "@calculemus", "oli-hammock", "assets")
+            path.join(__dirname),
+            path.join(__dirname, "node_modules", "@calculemus", "oli-hammock", "assets")
         ]
     }
 }

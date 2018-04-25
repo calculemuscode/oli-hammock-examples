@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        activity: "./main.js"
+        activity: path.join(__dirname, "main.js")
     },
     output: {
         filename: "activity.js",
@@ -12,7 +12,7 @@ module.exports = {
     devServer: {
         contentBase: [
             path.join(__dirname),
-            path.join(__dirname, "node_modules/@calculemus/oli-hammock/assets")
+            path.join(__dirname, "node_modules", "@calculemus", "oli-hammock", "assets")
         ]
     }
 }
