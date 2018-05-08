@@ -1,0 +1,6 @@
+{
+    "part": {
+        "match": {},
+        "nomatch": [true, "Correct: if we are forced to swap 2 for <i>something</i>, the only correct thing to swap it with is 2, since <span style='font-family: monospace;'>swap(A,2,2)</span> does not change the array."]
+      }
+}

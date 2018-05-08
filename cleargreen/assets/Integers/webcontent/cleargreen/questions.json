@@ -1,0 +1,30 @@
+{
+    "prompt": "Using the bitwise and operation, implement the C0 function <tt>clear_green(p)</tt> to resets the entire green channel of pixel <tt>p</tt> to zero.",
+    "part": {
+        "match": {
+            "good": [true, "Good. This function will use the bitwise-and operator to remove just the 8 bits making up the green channel of <tt>p</tt>."],
+            "syntaxerror": "There is a syntax error in the program you wrote.",
+            "onefunction": "Your answer should just have one C0 function in it.",
+
+            "empty": "The <tt>clear_green()</tt> you wrote is empty; it needs to include some code!",
+
+            "finishwithreturn": "The <tt>clear_green()</tt> funciton needs to finish with a <tt>return</tt> statement.",
+            "returnsomething": "Your function's return statement needs to return something.",
+            "multiplereturn": "Your function has multiple return statements. It should only have one.",
+            "uselessdecl": "You declare a local variable but then never define it. Remove the unnecessary declaration.",
+
+            "expressions": "Your function includes a statement that doesn't do anything; you should avoid this in your program.",
+            "toocomplicated": "Your function is too complicated; there is no need for assertions, conditionals, loops, or code blocks.",
+            "toocomplicated_long": "Your function is too complicated. You don't need more than one or two statements in total.",
+            "tryreturninglocal": "It looks like your return statement should be <tt>return {{local}};</tt>",
+
+            "bitwisenotlogical": "You used the logical-and operator <tt>&amp;&amp;</tt>. Instead, use the bitwise-and operator <tt>&amp;</tt>",
+            "justand": "The only operation on integers you should use is the bitwise-and operator <tt>&</tt>.",
+            "noidentifier": "Expected the bitwise-and operator to be applied to <tt>{{p}}</tt>.",
+            "notintliteral": "Expected the bitwise-and operator to be applied to an integer constant.",
+            "wrongvalue": "The masking value you used won't correctly mask out the green channel. Try <tt>0xFFFF00FF</tt> instead.",
+            "nothex": "When working with masks, the mask values should always be in hex, not decimal."
+        }
+    }
+}
+  

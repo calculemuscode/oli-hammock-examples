@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE embed_activity PUBLIC "-//Carnegie Mellon University//DTD Embed 1.1//EN" "http://oli.cmu.edu/dtd/oli-embed-activity_1.0.dtd">
+<embed_activity id="names" width="500" height="300">
+  <title>Selection Sort</title>
+  <source>Searching_and_Sorting/webcontent/doselect/activity.js</source>
+  <assets>
+    <asset name="layout">Searching_and_Sorting/webcontent/doselect/layout.html</asset>
+    <asset name="questions">Searching_and_Sorting/webcontent/doselect/questions.json</asset>
+  </assets>
+</embed_activity>
