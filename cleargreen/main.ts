@@ -33,6 +33,8 @@ export = hammock<string>({
         $("textarea").val(data.state);
         if (data.parts[0].feedback) {
             $("#feedback").html(widgets.feedback(data.parts[0].feedback!.message, data.parts[0].feedback!.correct));
+        } else {
+            $("#feedback").html("");
         }
     },
     parse: (prog: string) => {
